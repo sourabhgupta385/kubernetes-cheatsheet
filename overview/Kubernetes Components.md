@@ -6,4 +6,4 @@
 - The control plane manages the worker nodes and the Pods in the cluster. 
 - In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault-tolerance and high availability.
 
-<img src="components-of-kubernetes.png" width="500">
+<img src="components-of-kubernetes.png" width="1000">

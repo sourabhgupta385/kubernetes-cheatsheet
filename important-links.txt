@@ -1,0 +1,3 @@
+https://kubernetes.io/docs/concepts/
+
+https://kubectl.docs.kubernetes.io/

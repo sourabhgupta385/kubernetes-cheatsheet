@@ -7,8 +7,10 @@
 - You should use this pattern only in specific instances in which your containers are tightly coupled. 
 - For example, you might have a container that acts as a web server for files in a shared volume, and a separate “sidecar” container that updates those files from a remote source, as in the following diagram:
 
-<img src="multiple-container-pod-eg.svg" width="400">
-<img src="multiple-container-pod-eg.svg">
+<p align="center">
+  <img src="multiple-container-pod-eg.svg" width="400">
+</p>  
+
 
 Some Pods have `init containers` as well as `app containers`. Init containers run and complete before the app containers are started.
 

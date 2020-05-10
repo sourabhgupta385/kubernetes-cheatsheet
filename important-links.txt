@@ -1,3 +1,5 @@
 https://kubernetes.io/docs/concepts/
 
 https://kubectl.docs.kubernetes.io/
+
+https://medium.com/faun/understanding-how-kubernetes-readiness-and-liveness-probes-do-correlate-or-better-how-not-81d0ad15fd39

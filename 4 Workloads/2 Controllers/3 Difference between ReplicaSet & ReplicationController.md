@@ -1,4 +1,4 @@
-# Difference between ReplicationController & ReplicaSet
+# Difference between ReplicaSet & ReplicationController
 
 Replica Set is the next generation of Replication Controller. Replication controller is kinda imperative, but replica sets try to be as declarative as possible.
 

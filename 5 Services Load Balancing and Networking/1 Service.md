@@ -88,7 +88,7 @@ There are three types of proxy modes:
 - By default, kube-proxy in userspace mode chooses a backend via a round-robin algorithm.
 
 <p align="center">
-  <img src="services-userspace-overview.svg" width="400">
+  <img src="services-userspace-overview.svg" width="500">
 </p> 
 
 #### iptables proxy mode
@@ -100,7 +100,7 @@ There are three types of proxy modes:
 - Using iptables to handle traffic has a lower system overhead, because traffic is handled by Linux `netfilter` without the need to switch between userspace and the kernel space. This approach is also likely to be more reliable.
 
 <p align="center">
-  <img src="services-iptables-overview.svg" width="400">
+  <img src="services-iptables-overview.svg" width="500">
 </p> 
 
 **Difference between iptables proxy mode and User space proxy mode**
@@ -118,7 +118,7 @@ There are three types of proxy modes:
 - Compared to the other proxy modes, IPVS mode also supports a higher throughput of network traffic.
 
 <p align="center">
-  <img src="services-ipvs-overview.svg" width="400">
+  <img src="services-ipvs-overview.svg" width="500">
 </p> 
 
 ## Multi-Port Services
@@ -202,7 +202,7 @@ spec:
       # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
       nodePort: 30007
 ```
-**LoadBalancer**: Exposes the Service externally using a cloud provider’s load balancer. NodePort and ClusterIP Services, to which the external load balancer routes, are automatically created.On cloud providers which support external load balancers, setting the type field to LoadBalancer provisions a load balancer for your Service. The actual creation of the load balancer happens asynchronously, and information about the provisioned balancer is published in the Service’s .status.loadBalancer field. For example:
+- **LoadBalancer**: Exposes the Service externally using a cloud provider’s load balancer. NodePort and ClusterIP Services, to which the external load balancer routes, are automatically created.On cloud providers which support external load balancers, setting the type field to LoadBalancer provisions a load balancer for your Service. The actual creation of the load balancer happens asynchronously, and information about the provisioned balancer is published in the Service’s .status.loadBalancer field. For example:
 ```
 apiVersion: v1
 kind: Service
@@ -222,7 +222,7 @@ status:
     ingress:
     - ip: 192.0.2.127
 ```
-**ExternalName**: Maps the Service to the contents of the externalName field (e.g. foo.bar.example.com), by returning a CNAME record with its value. No proxying of any kind is set up.This Service definition, for example, maps the my-service Service in the prod namespace to my.database.example.com:
+- **ExternalName**: Maps the Service to the contents of the externalName field (e.g. foo.bar.example.com), by returning a CNAME record with its value. No proxying of any kind is set up.This Service definition, for example, maps the my-service Service in the prod namespace to my.database.example.com:
 ```
 apiVersion: v1
 kind: Service
